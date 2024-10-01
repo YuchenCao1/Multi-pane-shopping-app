@@ -14,7 +14,6 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalConfiguration
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.multi_pane_shopping_app.ui.theme.MultipaneshoppingappTheme
 
@@ -73,6 +72,7 @@ class MainActivity : ComponentActivity() {
                         products = products,
                         onProductClick = { product ->
                             Selected = product
+                            isList = false
                         },
                         modifier = Modifier
                             .weight(1f)
